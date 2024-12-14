@@ -1,0 +1,334 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header .bg-orange-500 {
+    background-color: #f97316;
+}
+
+header .bg-orange-500:hover {
+    background-color: #ea580c;
+}
+
+/* Баннер */
+.banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 24rem;
+    overflow: hidden;
+}
+
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.banner form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.banner form input,
+.banner form button {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+.banner form button {
+    background-color: #f97316;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner form button:hover {
+    background-color: #ea580c;
+}
+
+/* Контейнер для изображений */
+#image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.transition-opacity {
+    transition: opacity 1s ease-in-out;
+}
+
+/* Популярные направления */
+.popular-destinations {
+    padding: 3rem 0;
+}
+
+.popular-destinations h2 {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.popular-destinations .grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.popular-destinations .grid-item {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.popular-destinations .grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.popular-destinations .grid-item img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.popular-destinations .grid-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.popular-destinations .grid-item p {
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+.popular-destinations .grid-item a {
+    color: #4299e1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.popular-destinations .grid-item a:hover {
+    text-decoration: underline;
+}
+
+/* Преимущества */
+.benefits {
+    background-color: #f7fafc;
+    padding: 3rem 0;
+}
+
+.benefits h2 {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.benefits .grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.benefits .grid-item {
+    text-align: center;
+}
+
+.benefits .grid-item i {
+    font-size: 2rem;
+    color: #4299e1;
+    margin-bottom: 1rem;
+}
+
+.benefits .grid-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.benefits .grid-item p {
+    color: #718096;
+}
+
+/* Отзывы клиентов */
+.testimonials {
+    padding: 3rem 0;
+}
+
+.testimonials h2 {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.testimonials .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials .swiper-slide {
+    background-color: #f7fafc;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.testimonials .swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+.testimonials .swiper-slide p {
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+.testimonials .swiper-slide .client-info {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials .swiper-slide .client-info img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.testimonials .swiper-slide .client-info .client-name {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.testimonials .swiper-slide .client-info .client-location {
+    color: #718096;
+    font-size: 0.875rem;
+}
+
+.testimonials .swiper-pagination {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Подвал */
+footer {
+    background-color: #4a5568;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #4299e1;
+}
+
+/* Swiper styles */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    margin-top: 20px;
+}
