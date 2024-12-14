@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     const destinations = [
         { image: 'src/main/webapp/images/destinations/paris.jpg', name: 'Париж', price: '$1000' },
-        { image: 'bytorg_joytour/src/main/webapp/images/destinations/italy.jpg', name: 'Рим', price: '$1200' },
-        { image: 'images/destinations/maldives.jpg', name: 'Мальдивы', price: '$2000' },
-        { image: 'images/destinations/tokio.jpg', name: 'Токио', price: '$1800' },
-        { image: 'images/destinations/bali.jpg', name: 'Дубай', price: '$1500' },
-        { image: 'images/destinations/newyork.jpg', name: 'Нью-Йорк', price: '$1700' },
-        { image: 'images/destinations/indonesy.jpg', name: 'Барселона', price: '$1300' },
-        { image: 'images/destinations/thailand.jpg', name: 'Сидней', price: '$2200' },
-        { image: 'images/destinations/pata.jpg', name: 'Амстердам', price: '$1400' }
+        { image: 'src/main/webapp/images/destinations/italy.jpg', name: 'Рим', price: '$1200' },
+        { image: 'src/main/webapp/images/destinations/maldives.jpg', name: 'Мальдивы', price: '$2000' },
+        { image: 'src/main/webapp/images/destinations/tokio.jpg', name: 'Токио', price: '$1800' },
+        { image: 'src/main/webapp/images/destinations/bali.jpg', name: 'Дубай', price: '$1500' },
+        { image: 'src/main/webapp/images/destinations/newyork.jpg', name: 'Нью-Йорк', price: '$1700' },
+        { image: 'src/main/webapp/images/destinations/indonesy.jpg', name: 'Барселона', price: '$1300' },
+        { image: 'src/main/webapp/images/destinations/thailand.jpg', name: 'Сидней', price: '$2200' },
+        { image: 'src/main/webapp/images/destinations/pata.jpg', name: 'Амстердам', price: '$1400' }
     ];
 
     const destinationsContainer = document.getElementById('destinations');
@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-        'images/hero/hero1.jpg',
-        'images/hero/hero2.jpg',
-        'images/hero/hero3.jpg',
-        'images/hero/hero4.jpg'
+        'src/main/webapp/images/hero/hero1.jpg',
+        'src/main/webapp/images/hero/hero2.jpg',
+        'src/main/webapp/images/hero/hero3.jpg',
+        'src/main/webapp/images/hero/hero4.jpg'
     ];
 
     const imageContainer = document.getElementById('image-container');
@@ -73,37 +73,37 @@ document.addEventListener('DOMContentLoaded', function() {
             text: "Отличный сервис! Мы нашли тур своей мечты, спасибо вашей команде за помощь!",
             name: "Алексей",
             location: "Москва, Россия",
-            image: "images/clients/client1.jpg" // Указан путь к изображению
+            image: "src/main/webapp/images/clients/client1.jpg" // Указан путь к изображению
         },
         {
             text: "Всё было прекрасно организовано! Мы получили массу удовольствия.",
             name: "Мария",
             location: "Санкт-Петербург, Россия",
-            image: "images/clients/client2.jpg" // Указан путь к изображению
+            image: "src/main/webapp/images/clients/client2.jpg" // Указан путь к изображению
         },
         {
             text: "Лучший отпуск в нашей жизни! Обязательно вернёмся за новым приключением.",
             name: "Иван",
             location: "Новосибирск, Россия",
-            image: "images/clients/client3.jpg" // Указан путь к изображению
+            image: "src/main/webapp/images/clients/client3.jpg" // Указан путь к изображению
         },
         {
             text: "Невероятное путешествие! Всё прошло гладко, и мы получили массу впечатлений.",
             name: "Елена",
             location: "Екатеринбург, Россия",
-            image: "images/clients/client4.jpg" // Указан путь к изображению
+            image: "src/main/webapp/images/clients/client4.jpg" // Указан путь к изображению
         },
         {
             text: "Отличный выбор туров и отличное обслуживание. Рекомендую всем!",
             name: "Дмитрий",
             location: "Казань, Россия",
-            image: "images/clients/client5.jpg" // Указан путь к изображению
+            image: "src/main/webapp/images/clients/client5.jpg" // Указан путь к изображению
         },
         {
             text: "Спасибо за незабываемый отдых! Всё было на высшем уровне.",
             name: "Ольга",
             location: "Ростов-на-Дону, Россия",
-            image: "images/clients/client6.jpg" // Указан путь к изображению
+            image: "src/main/webapp/images/clients/client6.jpg" // Указан путь к изображению
         }
     ];
 
