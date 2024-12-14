@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const destinations = [
-        { image: 'images/destinations/paris.jpg', name: 'Париж', price: '$1000' },
-        { image: 'images/destinations/italy.jpg', name: 'Рим', price: '$1200' },
+        { image: 'src/main/webapp/images/destinations/paris.jpg', name: 'Париж', price: '$1000' },
+        { image: 'bytorg_joytour/src/main/webapp/images/destinations/italy.jpg', name: 'Рим', price: '$1200' },
         { image: 'images/destinations/maldives.jpg', name: 'Мальдивы', price: '$2000' },
         { image: 'images/destinations/tokio.jpg', name: 'Токио', price: '$1800' },
         { image: 'images/destinations/bali.jpg', name: 'Дубай', price: '$1500' },
